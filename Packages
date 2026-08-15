@@ -52,6 +52,24 @@ Description: Multiple containers for your applications!
 Author: opa334
 Name: Crane
 
+Package: com.roothide.patcher
+Version: 2.1.5
+Architecture: iphoneos-arm64e
+Installed-Size: 2476
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: debs/插件转换器-中文版.deb
+Size: 894768
+MD5sum: 9a69c8976089f06280301aad6509e6f3
+SHA1: da71f492d3b1b4046d3ad2e701ab8e45b81647f8
+SHA256: 502d836e5dace12509113d73c1048666630f7681ab1b8841edb0d3a63e59156b
+Section: Utilities
+Description: 插件转换器，将插件转换成隐根版本，这款转换器将英文改成中文
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
 Package: com.simon.ccglow
 Version: 2.0.3
 Architecture: iphoneos-arm64
