@@ -1,0 +1,19 @@
+Package: com.netskao.perfectgrabber
+Version: 1.1-7+roothide33
+Architecture: iphoneos-arm64e
+Maintainer: NetSkao / RootHide adaptation
+Installed-Size: 580
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Filename: debs/Ntonia-PreferenceLoader.deb
+Size: 203924
+MD5sum: 54dfdfe6896d3dc065efbc3618be783e
+SHA1: 491d2f3c39734a90b3a2899e2c6df74b1c132816
+SHA256: 1346cdf0dc9e888f55bbd6fb7771cc07c042d67486173de62bb23d6bce032d93
+Section: Tweaks
+Description: Shows time and battery information around the pull-down grabber. Rebuilt for RootHide.
+Author: NetSkao
+Icon: file:///Library/PreferenceBundles/PerfectGrabberSettings.bundle/.jbroot/Library/PreferenceBundles/PerfectGrabberSettings.bundle/NtoniaPGIcon.png
+Name: Ntonia-PreferenceLoader
+X-Arm64e-Abi: allemande
+X-Package-Scheme: roothide
+
