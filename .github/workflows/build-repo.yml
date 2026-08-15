@@ -19,17 +19,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install dpkg tools
+      - name: Install tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y dpkg-dev
+          sudo apt-get install -y dpkg-dev xz-utils gzip
 
       - name: Build Packages
         run: |
           mkdir -p dists/stable/main/binary-iphoneos-arm64
+          mkdir -p dists/stable/main/binary-iphoneos-arm64e
+
           dpkg-scanpackages -m debs /dev/null > dists/stable/main/binary-iphoneos-arm64/Packages
-          gzip -9c dists/stable/main/binary-iphoneos-arm64/Packages > dists/stable/main/binary-iphoneos-arm64/Packages.gz
-          xz -9 -c dists/stable/main/binary-iphoneos-arm64/Packages > dists/stable/main/binary-iphoneos-arm64/Packages.xz
+          cp dists/stable/main/binary-iphoneos-arm64/Packages \
+             dists/stable/main/binary-iphoneos-arm64e/Packages
+
+          gzip -9c dists/stable/main/binary-iphoneos-arm64/Packages \
+             > dists/stable/main/binary-iphoneos-arm64/Packages.gz
+
+          xz -9 -c dists/stable/main/binary-iphoneos-arm64/Packages \
+             > dists/stable/main/binary-iphoneos-arm64/Packages.xz
+
+          gzip -9c dists/stable/main/binary-iphoneos-arm64e/Packages \
+             > dists/stable/main/binary-iphoneos-arm64e/Packages.gz
+
+          xz -9 -c dists/stable/main/binary-iphoneos-arm64e/Packages \
+             > dists/stable/main/binary-iphoneos-arm64e/Packages.xz
 
       - name: Update Release
         run: |
@@ -38,7 +52,7 @@ jobs:
           Label: Ntonia Repo
           Suite: stable
           Codename: stable
-          Architectures: iphoneos-arm64
+          Architectures: iphoneos-arm64 iphoneos-arm64e
           Components: main
           Description: Ntonia's Jailbreak Repository
           EOF
@@ -47,6 +61,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add dists/
+
           git commit -m "Update repository metadata" || echo "No changes"
+
           git push
