@@ -1,0 +1,7 @@
+Origin: Ntonia Repo
+Label: Ntonia Repo
+Suite: stable
+Codename: stable
+Architectures: iphoneos-arm64
+Components: main
+Description: Ntonia's Jailbreak Repository
