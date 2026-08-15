@@ -1,3 +1,21 @@
+Package: com.be-huge.floating-view
+Version: 1.6.0-6-licensed
+Architecture: iphoneos-arm64
+Maintainer: be-huge (Modified)
+Installed-Size: 2700
+Depends: dev.theos.orion (>= 1.0.0), firmware (>= 12.2)
+Filename: debs/fv-1606.deb
+Size: 654728
+MD5sum: a0e7c25653d509d903d566fbfa58b292
+SHA1: 66c5ba02388e5bcaf6e3dd723cd0d5e82ec5b521
+SHA256: 8ac3f274140f423fc1161cf78715652233db687a81dee9bdc38aacf7d28f8dee
+Section: Tweaks
+Description: 分屏，不必太复杂，一切从简即可。
+Author: be-huge
+Icon: https://s1.imagehub.cc/images/2025/01/11/a6ee9b7d3555d062c59b68c2c71c7406.png
+Name: floatingView
+Sileodepiction: https://raw.githubusercontent.com/Wkkyy00/SileoDepiction/refs/heads/main/floatingView.json
+
 Package: com.netskao.perfectgrabber
 Version: 1.1-7+roothide33
 Architecture: iphoneos-arm64e
@@ -33,4 +51,108 @@ Section: Tweaks
 Description: Multiple containers for your applications!
 Author: opa334
 Name: Crane
+
+Package: com.roothide.patcher
+Version: 2.1.5
+Architecture: iphoneos-arm64e
+Maintainer: roothide
+Installed-Size: 2476
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil(>= 0.2.2-1), uikittools(>= 2.1.6-4)
+Filename: debs/com.roothide.patcher_2.1.5-arm64e_刀刀.deb
+Size: 894874
+MD5sum: 94043779e90a495735707f5836be7f6a
+SHA1: 583feba8a9b2d2774d06f68c3b0e84e850bc8191
+SHA256: 24540dcc01db6cbe8692660f546e842055f14e5ab6467c0b6d7221a7d098cab8
+Section: Utilities
+Description: patch rootless package to roothide, not work for all packages.
+Author: roothide
+Depiction: https://github.com/roothide/RootHidePatcher
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Name: RootHide Patcher
+Support: https://github.com/roothide/RootHidePatcher
+
+Package: com.simon.ccglow
+Version: 2.0.3
+Architecture: iphoneos-arm64
+Maintainer: Simon
+Installed-Size: 536
+Depends: mobilesubstrate
+Filename: debs/控制中心发光_2.0.3.deb
+Size: 78732
+MD5sum: 718ca3eed4df8aa7abdf01d7696464a7
+SHA1: 0fac3b22ceb84c07d43c022022d5350679665d57
+SHA256: 84fde04ad1038ee2306cb67f2fa352d2a098f484c6aadca677fb039cc13c6c27
+Section: Tweaks
+Description: 控制中心发光
+Author: Simon
+Name: 控制中心发光
+
+Package: com.simon.ccweathermodule
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: simon
+Installed-Size: 380
+Depends: mobilesubstrate, firmware (>= 14.0)
+Filename: debs/控制中心天气_市级.deb
+Size: 87026
+MD5sum: 81e4ab606a08ecf3a00703b7157bd116
+SHA1: 06f9ca93cc56d15faab555bbee89d1dd7e72905c
+SHA256: d0a78dd8275ba5621f8d22cfaea61e1bb69f361667924cf9ced3bcbd1c32051b
+Section: Tweaks
+Description: 控制中心的天气模块。 显示当前天气、温度和每小时预报。
+Author: simon
+Name: CCWeather Module
+
+Package: com.simon.ccweathermodule
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: simon
+Installed-Size: 380
+Depends: mobilesubstrate, firmware (>= 14.0)
+Filename: debs/控制中心天气_区级.deb
+Size: 88046
+MD5sum: ccb8784555ec858e62ded0c7ede8e4c3
+SHA1: 138c0c8439a10d605079b96a95ac800ae79ddb2c
+SHA256: bbddeede3fb95eb69db9d851761521b3e862cb15d71c749ee2d5726f792c37aa
+Section: Tweaks
+Description: 控制中心的天气模块。 显示当前天气、温度和每小时预报。
+Author: simon
+Name: CCWeather Module
+
+Package: com.spark.snowboard
+Version: 1.5.50
+Architecture: iphoneos-arm64
+Maintainer: Spark
+Installed-Size: 3268
+Depends: mobilesubstrate, preferenceloader
+Conflicts: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Replaces: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
+Filename: debs/滑雪板-内置扩展_1.5.50.deb
+Size: 1255596
+MD5sum: 069b3abe4e9317ea301568357dd59ea1
+SHA1: 34ac02aebc8f633fdba518304b4b7c69dd535ed9
+SHA256: 9ac5bb5d7c2fc0e98e749f257394859ab365f01fdad62fd0f956dccf7b012bf9
+Section: SnowBoard
+Description: Snowboard本体，所有扩展都将依赖此插件，单独使用可以更换桌面图标（抖动后双击）等其他功能，此源仅作备份与注释。
+Author: Spark & Dennis D. Bednarz
+Icon: https://s1.imagehub.cc/images/2025/02/16/6184f5a172c0da2db10df7ddce6977bc.png
+Name: SnowBoard
+
+Package: org.coolstar.sileo
+Version: 2.5.1-13
+Architecture: iphoneos-arm64e
+Maintainer: Amy While <me@anamy.gay>
+Depends: firmware (>= 11.0), firmware(>=12.2) | org.swift.libswift (>=5.0), coreutils (>= 8.30-1), dpkg (>= 1.19.4-1), apt (>= 1.8.2), libzstd1
+Filename: debs/sileo_2.5.1-13_插件指示器-arm64e_刀刀.deb
+Size: 3013864
+MD5sum: fb06cede5e39f6b86c76fe63add7cbca
+SHA1: cb79dbce818d9f783f76b9121e6e168aec9caa40
+SHA256: 6e445c578f0b956c9fe9e77141e9ff82ee63f6edcc20b416d7082254d61493b8
+Section: Packaging
+Description: A modern APT package manager frontend
+Author: Amy While <me@anamy.gay>
+Icon: https://getsileo.app/img/icon.png
+Name: Sileo
+Sileodepiction: https://featuredpage.getsileo.app/depiction.json
 
