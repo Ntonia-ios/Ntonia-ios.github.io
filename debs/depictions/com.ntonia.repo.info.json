@@ -1,0 +1,19 @@
+{
+  "minVersion": "0.1",
+  "class": "DepictionTabView",
+  "tintColor": "#007AFF",
+  "headerImage": {
+    "url": "https://ntonia-ios.github.io/images/repo-info.png"
+  },
+  "tabs": [
+    {
+      "tabname": "说明",
+      "views": [
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "# A-空包说明\n\n这里是ntonia自用软件源"
+        }
+      ]
+    }
+  ]
+}
