@@ -1,19 +1,14 @@
 {
-  "minVersion": "0.4",
-  "class": "DepictionTabView",
-  "tintColor": "#007AFF",
+  "class": "Depiction",
+  "title": "A-空包说明",
   "tabs": [
     {
-      "class": "DepictionStackView",
+      "class": "DepictionTabView",
       "tabname": "说明",
       "views": [
         {
-          "class": "DepictionHeaderView",
-          "title": "A-空包说明"
-        },
-        {
           "class": "DepictionMarkdownView",
-          "markdown": "这里是ntonia自用软件源"
+          "markdown": "# A-空包说明\n\n这里是ntonia自用软件源"
         },
         {
           "class": "DepictionImageView",
