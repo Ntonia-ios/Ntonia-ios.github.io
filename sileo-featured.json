@@ -1,11 +1,11 @@
 {
   "class": "FeaturedBannersView",
-  "itemSize": "{500, 250}",
+  "itemSize": "{1000, 500}",
   "itemCornerRadius": 10,
   "banners": [
     {
       "url": "https://ntonia-ios.github.io/banner.png",
-      "title": "        Ntonia 自用源",
+      "title": "      Ntonia 自用源",
       "package": "com.netskao.perfectgrabber",
       "hideShadow": false
     }
