@@ -1,17 +1,27 @@
 {
-  "minVersion": "0.1",
+  "minVersion": "0.4",
   "class": "DepictionTabView",
   "tintColor": "#007AFF",
-  "headerImage": {
-    "url": "https://ntonia-ios.github.io/images/repo-info.png"
-  },
   "tabs": [
     {
+      "class": "DepictionStackView",
       "tabname": "说明",
       "views": [
         {
+          "class": "DepictionHeaderView",
+          "title": "A-空包说明"
+        },
+        {
           "class": "DepictionMarkdownView",
-          "markdown": "# A-空包说明\n\n这里是ntonia自用软件源"
+          "markdown": "这里是ntonia自用软件源"
+        },
+        {
+          "class": "DepictionImageView",
+          "URL": "https://ntonia-ios.github.io/images/repo-info.png",
+          "width": 414,
+          "height": 174,
+          "cornerRadius": 8,
+          "alignment": 1
         }
       ]
     }
