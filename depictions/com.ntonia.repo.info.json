@@ -1,6 +1,5 @@
 {
     "class": "DepictionTabView",
-    "tintColor": "#007AFF",
     "minVersion": "0.3",
     "tabs": [
         {
@@ -8,31 +7,17 @@
             "tabname": "说明",
             "views": [
                 {
-                    "class": "DepictionMarkdownView",
-                    "markdown": "## A-空包说明\n\n这里是ntonia自用软件源",
-                    "useSpacing": true
-                },
-                {
-                    "class": "DepictionSeparatorView"
-                },
-                {
-                    "class": "DepictionSpacerView",
-                    "spacing": 8
-                },
-                {
                     "class": "DepictionHeaderView",
-                    "title": "图片预览",
-                    "useBoldText": true,
-                    "useBottomMargin": false
+                    "title": "A-空包说明"
                 },
                 {
-                    "class": "DepictionSpacerView",
-                    "spacing": 8
+                    "class": "DepictionMarkdownView",
+                    "markdown": "这里是ntonia自用软件源"
                 },
                 {
                     "class": "DepictionScreenshotsView",
                     "itemCornerRadius": 8,
-                    "itemSize": "{414, 174}",
+                    "itemSize": "{600, 300}",
                     "screenshots": [
                         {
                             "accessibilityText": "A-空包说明",
