@@ -51,6 +51,36 @@ Icon: https://ntonia-ios.github.io/images/空包说明.png
 Name: A-空包说明
 Sileodepiction: https://ntonia-ios.github.io/depictions/com.ntonia.repo.info.json
 
+Package: com.ntonia.stayshot-edit
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Ntonia
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: debs/stayshot-edit趁热拿铁网友的素材-arm64e.deb
+Size: 43896
+MD5sum: 5ae8f1fda70cc12c9439b56841de99d1
+SHA1: e374c6d34961e2d08a55fc23c04395a477dba916
+SHA256: 938a1e681db3c095738e28b0809c66aaec0022d9653efe8444263115f06c3b40
+Section: 美化插件
+Description: 网友趁热拿铁的素材
+Author: Ntonia
+Name: StayShot Edit-网友素材
+
+Package: com.ntonia.stayshot-edit
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Ntonia
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: debs/stayshot-edit趁热拿铁网友的素材-arm64.deb
+Size: 43900
+MD5sum: 4a0d4793a6f0e1ad551cdc79e7a3208b
+SHA1: 51ea45d85ee43383807e564ede379d454c3c8fcc
+SHA256: 9ab605371267d86943976af64d7c4f0948c5e8d0cb328053a5188ec33307ac2f
+Section: 美化插件
+Description: 网友趁热拿铁的素材
+Author: Ntonia
+Name: StayShot Edit-网友素材
+
 Package: com.ntonia.stayshot-sucai
 Version: 1.0.0
 Architecture: iphoneos-arm64
