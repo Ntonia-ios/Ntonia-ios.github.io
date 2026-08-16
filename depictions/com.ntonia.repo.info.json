@@ -8,9 +8,9 @@
             "tabname": "说明",
             "views": [
                 {
+                    "class": "DepictionMarkdownView",
                     "markdown": "## A-空包说明\n\n这里是ntonia自用软件源",
-                    "useSpacing": true,
-                    "class": "DepictionMarkdownView"
+                    "useSpacing": true
                 },
                 {
                     "class": "DepictionSeparatorView"
