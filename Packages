@@ -35,6 +35,22 @@ Name: Ntonia-PreferenceLoader
 X-Arm64e-Abi: allemande
 X-Package-Scheme: roothide
 
+Package: com.ntonia.repo.info
+Version: 1.0.0
+Architecture: all
+Maintainer: Ntonia
+Filename: debs/空白说明.deb
+Size: 776
+MD5sum: f8cb50d309bedf63d3a5f58f23dd017d
+SHA1: d901b99f5002c3dba5dc21590a04e307039da7e9
+SHA256: 6f6ec568db020bfb6b27f38b686db67109d5924ed7c47ef0e96a294c6a6bfdee
+Section: Utilities
+Description: 这里是Ntonia自用软件源
+Author: Ntonia
+Icon: https://ntonia-ios.github.io/images/空包说明.png
+Name: A-空包说明
+Sileodepiction: https://ntonia-ios.github.io/depictions/com.ntonia.repo.info.json
+
 Package: com.opa334.crane
 Version: 1.3.18
 Architecture: iphoneos-arm64
