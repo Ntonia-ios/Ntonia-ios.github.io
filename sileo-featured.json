@@ -4,7 +4,7 @@
   "itemCornerRadius": 10,
   "banners": [
     {
-      "url": "https://ntonia-ios.github.io/banner.png",
+      "url": "https://ntonia-ios.github.io/img/banner.png",
       "title": "",
       "package": "com.ntonia.repo.info",
       "hideShadow": false
