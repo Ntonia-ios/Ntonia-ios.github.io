@@ -39,7 +39,7 @@ Package: com.ntonia.repo.info
 Version: 1.0.0
 Architecture: all
 Maintainer: Ntonia
-Filename: debs/空白说明.deb
+Filename: debs/空包说明.deb
 Size: 776
 MD5sum: f8cb50d309bedf63d3a5f58f23dd017d
 SHA1: d901b99f5002c3dba5dc21590a04e307039da7e9
