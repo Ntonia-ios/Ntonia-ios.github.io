@@ -83,6 +83,38 @@ Description: 网友趁热拿铁的素材
 Author: Ntonia
 Name: StayShot Edit-网友素材
 
+Package: com.ntonia.stayshot-sucai
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Ntonia
+Depends: mobilesubstrate, firmware (>= 15.0)
+Replaces: com.susudear.stayshot.markup,com.susudear.susuocr,com.susudear.stayshot.long-screenshot,com.susudear.stayshot,com.ntonia.stayshot-edit
+Filename: debs/StayShot-中文大字素材-arm64.deb
+Size: 63292
+MD5sum: 0bce02b3dd33b3fcf0061b28dd8d926e
+SHA1: 60fdd8f0eee67d2b30d878e5df243edb9fd54c60
+SHA256: a10dd71467b4e3456aba9c3e8b88b5182f4e058b88051b10884cd89e80b56e7c
+Section: 美化插件
+Description: 航·中文大字素材
+Author: Ntonia
+Name: StayShot-中文大字素材
+
+Package: com.ntonia.stayshot-sucai
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Ntonia
+Depends: mobilesubstrate, firmware (>= 15.0)
+Replaces: com.susudear.stayshot.markup,com.susudear.susuocr,com.susudear.stayshot.long-screenshot,com.susudear.stayshot,com.ntonia.stayshot-edit
+Filename: debs/StayShot-中文大字素材-arm64e.deb
+Size: 63220
+MD5sum: b0cf244dba4adac06e357c8a53269304
+SHA1: 7356221810ca17c7ce690b9c24b032c9bae7a210
+SHA256: 2ea25115620cfe8ece5ea086ec7ebb0eba3f14d8fc4e62b67e06d30613bbbe6b
+Section: 美化插件
+Description: 航·中文大字素材
+Author: Ntonia
+Name: StayShot-中文大字素材
+
 Package: com.opa334.crane
 Version: 1.3.18
 Architecture: iphoneos-arm64
