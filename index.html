@@ -1,423 +1,80 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-    <title>Ntonia 软件源</title>
-
-    <meta name="description" content="Ntonia 自用软件源">
-
-    <style>
-        * {
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        body {
-            margin: 0;
-            font-family:
-                -apple-system,
-                BlinkMacSystemFont,
-                "SF Pro Display",
-                "Helvetica Neue",
-                Arial,
-                sans-serif;
-
-            background: #f5f5f7;
-            color: #1d1d1f;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 680px;
-            margin: auto;
-            padding: 24px 16px 40px;
-        }
-
-        /* 顶部 */
-
-        .hero {
-            text-align: center;
-            padding: 35px 10px 25px;
-        }
-
-        .repo-icon {
-            width: 90px;
-            height: 90px;
-            border-radius: 22px;
-            object-fit: cover;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-            margin-bottom: 18px;
-        }
-
-        .hero h1 {
-            margin: 0;
-            font-size: 32px;
-            font-weight: 700;
-            letter-spacing: -1px;
-        }
-
-        .hero p {
-            margin: 10px 0 0;
-            color: #6e6e73;
-            font-size: 16px;
-        }
-
-        /* 添加源 */
-
-        .add-button {
-            display: block;
-            width: 100%;
-            padding: 16px;
-            margin-top: 20px;
-
-            border-radius: 16px;
-
-            background: #007aff;
-            color: white;
-
-            text-decoration: none;
-            text-align: center;
-
-            font-size: 17px;
-            font-weight: 600;
-
-            box-shadow: 0 8px 20px rgba(0,122,255,0.25);
-
-            transition: transform .15s ease;
-        }
-
-        .add-button:active {
-            transform: scale(0.97);
-        }
-
-        /* 卡片 */
-
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 20px;
-            margin-top: 18px;
-
-            box-shadow:
-                0 3px 12px rgba(0,0,0,0.05);
-        }
-
-        .card h2 {
-            margin: 0 0 12px;
-            font-size: 20px;
-        }
-
-        .card p {
-            margin: 0;
-            line-height: 1.7;
-            color: #6e6e73;
-        }
-
-        /* 软件源地址 */
-
-        .repo-url {
-            margin-top: 15px;
-            padding: 13px;
-
-            border-radius: 12px;
-
-            background: #f5f5f7;
-
-            font-size: 13px;
-            color: #555;
-
-            word-break: break-all;
-        }
-
-        .copy-button {
-            width: 100%;
-            border: none;
-
-            margin-top: 12px;
-            padding: 13px;
-
-            border-radius: 12px;
-
-            background: #e9e9ed;
-            color: #007aff;
-
-            font-size: 15px;
-            font-weight: 600;
-        }
-
-        /* 插件 */
-
-        .package {
-            display: flex;
-            align-items: center;
-
-            padding: 15px 0;
-
-            border-bottom: 1px solid #eee;
-        }
-
-        .package:last-child {
-            border-bottom: none;
-        }
-
-        .package-icon {
-            width: 55px;
-            height: 55px;
-
-            border-radius: 13px;
-
-            object-fit: cover;
-
-            margin-right: 14px;
-        }
-
-        .package-info {
-            flex: 1;
-        }
-
-        .package-name {
-            font-size: 16px;
-            font-weight: 600;
-        }
-
-        .package-desc {
-            margin-top: 4px;
-
-            font-size: 13px;
-
-            color: #8e8e93;
-        }
-
-        .package-button {
-            text-decoration: none;
-
-            padding: 8px 13px;
-
-            border-radius: 20px;
-
-            background: #007aff;
-
-            color: white;
-
-            font-size: 13px;
-
-            font-weight: 600;
-        }
-
-        /* 底部 */
-
-        footer {
-            text-align: center;
-
-            margin-top: 30px;
-
-            color: #8e8e93;
-
-            font-size: 13px;
-        }
-
-        @media (prefers-color-scheme: dark) {
-
-            body {
-                background: #000;
-                color: #f5f5f7;
-            }
-
-            .card {
-                background: #1c1c1e;
-            }
-
-            .repo-url {
-                background: #2c2c2e;
-                color: #aaa;
-            }
-
-            .copy-button {
-                background: #2c2c2e;
-            }
-
-            .package {
-                border-color: #38383a;
-            }
-
-            .hero p,
-            .card p,
-            .package-desc {
-                color: #98989d;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ntonia‑iOS Repo</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{background:#12131a;color:#e6e8f0;min-height:100vh;padding:40px 20px}
+.container{max-width:720px;margin:0 auto}
+h1{font-size:30px;margin-bottom:8px}
+.sub{color:#989cb0;margin-bottom:32px}
+.card{background:#1b1d29;border-radius:14px;padding:24px;margin-bottom:22px;border:1px solid #2c2f40}
+.repo-url{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+input{flex:1;min-width:220px;padding:12px 14px;border-radius:8px;border:none;background:#0f1017;color:#fff;font-size:15px;outline:1px solid #33364a}
+button{padding:12px 18px;border-radius:8px;border:none;background:#4b6cff;color:#fff;font-weight:600;cursor:pointer;transition:.2s}
+button:hover{background:#3958e8}
+.tip{margin-top:10px;font-size:13px;color:#7f849c;height:18px}
+h2{font-size:18px;margin-bottom:14px;color:#d4d8ee}
+ol{padding-left:20px;line-height:1.9;color:#c5c9df}
+.note{background:#232533;padding:14px;border-radius:10px;margin-top:12px;color:#b0b5cf;font-size:14px;line-height:1.7}
+.footer{margin-top:40px;text-align:center;color:#6b708a;font-size:13px}
+</style>
 </head>
-
 <body>
-
 <div class="container">
-
-    <!-- 顶部 -->
-
-    <div class="hero">
-
-        <img
-            class="repo-icon"
-            src="img/repo-info.png"
-            alt="Ntonia"
-        >
-
-        <h1>Ntonia 软件源</h1>
-
-        <p>这里是 Ntonia 自用软件源</p>
-
-        <!-- 添加 Sileo -->
-
-        <a
-            class="add-button"
-            href="sileo://source/https://ntonia-ios.github.io/"
-        >
-            添加到 Sileo
-        </a>
-
-    </div>
-
-
-    <!-- 软件源介绍 -->
+    <h1>Ntonia‑iOS 软件源</h1>
+    <div class="sub">TrollStore · Dopamine Rootless Tweaks</div>
 
     <div class="card">
-
-        <h2>关于软件源</h2>
-
-        <p>
-            欢迎来到 Ntonia 软件源。
-            <br>
-            这里存放 Ntonia 自制插件以及一些整理的软件包。
-        </p>
-
+        <h2>源地址</h2>
+        <div class="repo-url">
+            <input id="urlBox" readonly value="https://ntonia-ios.github.io/">
+            <button id="copyBtn">一键复制</button>
+        </div>
+        <div class="tip" id="msg"></div>
     </div>
-
-
-    <!-- 软件源地址 -->
 
     <div class="card">
-
-        <h2>软件源地址</h2>
-
-        <div
-            class="repo-url"
-            id="repoURL"
-        >
-            https://ntonia-ios.github.io/
+        <h2>添加源教程</h2>
+        <ol>
+            <li>打开 Sileo / Zebra / Saily</li>
+            <li>点「源」→右上角「+」</li>
+            <li>粘贴上面的源地址</li>
+            <li>等待刷新完成即可浏览插件</li>
+        </ol>
+        <div class="note">
+            ⚠️ 本源插件主要适配 <b>Rootless（无根/隐根）</b>，iOS 15‑16。
+            Rootful 设备安装前请查看插件详情标注。
         </div>
-
-        <button
-            class="copy-button"
-            onclick="copyRepo()"
-        >
-            复制源地址
-        </button>
-
     </div>
-
-
-    <!-- 插件 -->
 
     <div class="card">
-
-        <h2>插件</h2>
-
-
-        <!-- 空包说明 -->
-
-        <div class="package">
-
-            <img
-                class="package-icon"
-                src="img/repo-info.png"
-                alt=""
-            >
-
-            <div class="package-info">
-
-                <div class="package-name">
-                    A-空包说明
-                </div>
-
-                <div class="package-desc">
-                    Ntonia 软件源说明
-                </div>
-
-            </div>
-
-            <a
-                class="package-button"
-                href="sileo://package/com.ntonia.repo.info"
-            >
-                查看
-            </a>
-
+        <h2>说明</h2>
+        <div class="note">
+            如有插件闪退、安全模式问题，请前往项目反馈。
         </div>
-
-
-        <!-- PerfectGrabber -->
-
-        <div class="package">
-
-            <img
-                class="package-icon"
-                src="img/PerfectGrabber.png"
-                alt=""
-            >
-
-            <div class="package-info">
-
-                <div class="package-name">
-                    PerfectGrabber
-                </div>
-
-                <div class="package-desc">
-                    显示时间、电量等信息
-                </div>
-
-            </div>
-
-            <a
-                class="package-button"
-                href="sileo://package/com.netskao.perfectgrabber"
-            >
-                查看
-            </a>
-
-        </div>
-
     </div>
 
-
-    <footer>
-        © 2026 Ntonia
-    </footer>
-
+    <div class="footer">© Ntonia‑iOS Repo</div>
 </div>
 
-
 <script>
-
-function copyRepo() {
-
-    const url = "https://ntonia-ios.github.io/";
-
-    navigator.clipboard.writeText(url).then(function() {
-
-        alert("软件源地址已复制");
-
-    }).catch(function() {
-
-        alert("复制失败，请手动复制");
-
-    });
-
-}
-
+const box=document.getElementById("urlBox");
+const btn=document.getElementById("copyBtn");
+const msg=document.getElementById("msg");
+btn.onclick=async ()=>{
+    try{
+        await navigator.clipboard.writeText(box.value);
+        msg.innerText="✅ 源地址复制成功，可以直接粘贴到包管理器";
+    }catch(e){
+        box.select();
+        document.execCommand('copy');
+        msg.innerText="✅ 已选中，请手动复制";
+    }
+    setTimeout(()=>msg.innerText="",3000);
+};
 </script>
-
 </body>
 </html>
